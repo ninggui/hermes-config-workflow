@@ -215,7 +215,7 @@ curl -s -w "\nHTTP:%{http_code}" "https://api.tavily.com/search" \
 ```
 
 **Feishu 平台 Key 更新陷阱**：飞书会自动将消息中的 API Key 打码为 `...`，导致通过飞书发送的 sed/Python 命令被截断。解决方案：
-1. 用 `write_file` 将 Key 写入 `/path/to/data/tavily_key.txt`
+1. 用 `write_file` 将 Key 写入 `/path/to/data/search_api_key.txt`
 2. 用户从文件读取 Key，手动编辑 `.env` 或运行文件读取脚本更新
 
 ## SkillHub 技能商店

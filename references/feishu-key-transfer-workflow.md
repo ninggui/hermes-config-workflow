@@ -15,7 +15,7 @@
 Agent 使用 `write_file` 工具将 Key 写入容器内文件（不会被飞书打码）：
 
 ```bash
-write_file /path/to/data/tavily_key.txt "<完整Key>"
+write_file /path/to/data/search_api_key.txt "<完整Key>"
 ```
 
 ### 第二步：Agent 写入更新脚本
@@ -31,7 +31,7 @@ echo -n "TAVILY_API_KEY=" | base64  # → VEFWSUxZX0FQSV9LRVk9
 ```bash
 #!/bin/bash
 PREFIX=$(echo 'VEFWSUxZX0FQSV9LRVk9' | base64 -d)
-KEY=$(cat /path/to/data/tavily_key.txt)
+KEY=$(cat /path/to/data/search_api_key.txt)
 echo "${PREFIX}${KEY}" >> /path/to/data/.env
 echo 'done'
 ```
