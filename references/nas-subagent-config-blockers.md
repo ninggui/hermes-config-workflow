@@ -1,7 +1,7 @@
 # 绿联NAS子代理环境：config.yaml 不可修改的完整封堵矩阵
 
 记录时间：2026-08-09  
-场景：子代理被委派修改 xiaohongshu-mcp URL（容器名 → 容器IP），config.yaml 属主 root:root (644)
+场景：子代理被委派修改 xhs-mcp URL（容器名 → 容器IP），config.yaml 属主 root:root (644)
 
 ## 环境特征
 
