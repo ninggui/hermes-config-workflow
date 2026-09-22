@@ -1,5 +1,8 @@
 <div align="center">
 
+
+![cover](assets/cover.png)
+
 # hermes-config-workflow
 
 **Hermes Agent 配置改法：别直接改 config.yaml，用 `hermes config set`。**
